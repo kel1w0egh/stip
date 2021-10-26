@@ -1,0 +1,51 @@
+.condition-block-title p,
+.results-block-title p,
+.links-block-title p {
+    text-align: center;
+    color: antiquewhite;
+}
+
+.condition-block-title,
+.results-block-title ,
+.links-block-title {
+    cursor: pointer;
+    padding: 15px 0;
+    background-color: dodgerblue;
+    transition: .4s all;
+}
+
+.condition-block-title:hover,
+.results-block-title:hover,
+.links-block-title:hover {
+    background-color: #016ae3;
+}
+
+.results-block-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.condition-block-content,
+.results-block-content,
+.links-block-content {
+    height: fit-content;
+    padding: 25px 50px;
+}
+
+.exercise-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-test {
+    padding: 25px 50px;
+    margin-bottom: 15px;
+}
+
+.block-table-colors table tbody tr td {
+    cursor: pointer;
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS файлы -->
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="condition-block">
+    <div class="condition-block-title">
+        <p>Условие практической работы</p>
+    </div>
+    <div class="condition-block-content">
+        <p>1) Вертикальное двухуровневое меню, раскрывающееся при наведении
+            указателя мыши. Второй уровень меню скрывается, когда указатель мыши покидает
+            область выбранного пункта или появившегося меню.</p>
+        <p>2) Разместите на странице четыре изображения, два поля ввода и кнопку
+            Переставить. При нажатии на данную кнопку изображения с номерами, введенными в
+            текстовые поля, должны поменяться местами.</p>
+    </div>
+</div>
+<div class="results-block">
+    <div class="results-block-title">
+        <p>Результат выполнения работы</p>
+    </div>
+    <div class="results-block-content">
+        <div class="exercise-1">
+            <ul class="vertical-menu">
+                <li class="list-item">Пункт 1</li>
+                <li class="list-item">
+                    <span>Пункт 2</span>
+                    <ul class="sub-menu">
+                        <li class="list-item">Пункт 2.1</li>
+                        <li class="list-item">Пункт 2.2</li>
+                    </ul>
+                </li>
+                <li class="list-item">Пункт 3</li>
+            </ul>
+        </div>
+        <div class="exercise-2">
+            <div class="images">
+                <img src="./images/red.jpg" alt="red image">
+                <img src="./images/yellow.jpg" alt="yellow image">
+                <img src="./images/blue.jpg" alt="blue image">
+                <img src="./images/green.jpg" alt="green image">
+            </div>
+            <div class="controls">
+                <form class="form-replace-images">
+                    <input type="number" min="1" max="4" name="from" required>
+                    <input type="number" min="1" max="4" name="to" required>
+                    <button type="submit">Поменять местами</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="links-block">
+    <div class="links-block-title">
+        <p>Ссылки на программные коды работы</p>
+    </div>
+    <div class="links-block-content"></div>
+</div>
+
+<!-- JavaScript файлы -->
+<script src="script.js"></script>
+</body>
+</html>

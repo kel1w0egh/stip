@@ -1,0 +1,73 @@
+.header {
+    margin-bottom: 15px;
+}
+
+.header-title-section {
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12);
+}
+
+/* .main */
+.main {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.main-navigation-section {
+    margin-right: 15px;
+}
+
+/* Стилизация навигационного списка */
+.navigation-list {
+    width: fit-content;
+}
+
+.navigation-list .list-item:first-child {
+    border-top-right-radius: 10px;
+}
+
+.navigation-list .list-item:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.navigation-list .list-item {
+    cursor: pointer;
+    background-color: dodgerblue;
+    transition: .4s all;
+}
+
+.navigation-list .list-item:hover {
+    background-color: #016ae3;
+}
+
+.navigation-list .list-item a {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+/* Стилизация iframe */
+
+.main-result-section {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.iframe {
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #efefef;
+    flex: 1 1 auto;
+}
+
+/* Стилизация подвала */
+.footer {
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.12), 0 -2px 2px rgba(0, 0, 0, 0.12), 0 -4px 4px rgba(0, 0, 0, 0.12);
+    height: calc(100vh - (151px + 508px));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,95 @@
+.condition-block-title p,
+.results-block-title p,
+.links-block-title p {
+    text-align: center;
+    color: antiquewhite;
+}
+
+.condition-block-title,
+.results-block-title ,
+.links-block-title {
+    cursor: pointer;
+    padding: 15px 0;
+    background-color: dodgerblue;
+    transition: .4s all;
+}
+
+.condition-block-title:hover,
+.results-block-title:hover,
+.links-block-title:hover {
+    background-color: #016ae3;
+}
+
+.results-block-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.condition-block-content,
+.results-block-content,
+.links-block-content {
+    height: fit-content;
+    padding: 25px 50px;
+}
+
+.hide {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+/* CSS задания 1 */
+
+.exercise-1 {
+    margin-bottom: 15px;
+}
+
+.vertical-menu {
+    width: max-content;
+}
+
+.list-item {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 15px;
+    background-color: rebeccapurple;
+    color: whitesmoke;
+}
+
+.sub-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: max-content;
+    display: none;
+}
+
+.show-menu {
+    display: block;
+}
+
+/* CSS задания 2 */
+.images {
+    display: flex;
+}
+
+.images img {
+    width: 100px;
+}
+
+.controls .form-replace-images {
+    display: flex;
+}
+
+.controls .form-replace-images * {
+    flex: 1 1 auto;
+    padding: 5px 10px;
+}
+
+.exercise-2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
