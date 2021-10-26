@@ -34,6 +34,12 @@
     padding: 25px 50px;
 }
 
+.links-block-content {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
 .hide {
     height: 0;
     overflow: hidden;
