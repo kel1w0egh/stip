@@ -5,9 +5,80 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS файлы -->
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+<div class="condition-block">
+    <div class="condition-block-title">
+        <p>Условие практической работы</p>
+    </div>
+    <div class="condition-block-content">
+        <p>1) Дана строка "aa aba abba abbba abbbba abbbbba". Напишите
+            регулярное выражение, которое найдет строки abba, abbba, abbbba и только
+            их.</p>
+        <p>2) 1. Создать страницу с динамическим содержанием &quot;Проверка
+            значений, введенных пользователем в поля формы для регистрации&quot;.
+            Форма должна содержать поля «Имя», «Фамилия», «Наименование
+            организации», «Номер кредитной карты», «Номер телефона», «Адрес
+            электронной почты», кнопки «Отправить» и «Очистить».
+            2. Осуществить проверку заполненности данными всех полей.
+            3. Построить шаблон для проверки данных кредитной карточки с
+            ограничением количества попыток неправильного ввода данных.
+            4. Последняя проверка должна контролировать структуру и
+            содержимое полей (правильность ввода имени и фамилии,номера
+            телефона,электронного адреса.).</p>
+    </div>
+</div>
+<div class="results-block">
+    <div class="results-block-title">
+        <p>Результат выполнения работы</p>
+    </div>
+    <div class="results-block-content">
+        <div class="exercise-1">
+            <form name="formTestValidate">
+                <div class="form-fields">
+                    <div class="left-form-fields">
+                        <input type="text" placeholder="Имя" name="firstname">
+                        <input type="text" placeholder="Фамилия" name="surname">
+                        <input type="text" placeholder="Наименование организации" name="company">
+                    </div>
+                    <div class="right-form-fields">
+                        <input type="text" placeholder="Номер кредитной карты" name="bankCard">
+                        <input type="tel" placeholder="Номер телефона" name="phoneNumber">
+                        <input type="email" placeholder="Адрес электронной почты" name="email">
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit">Отправить</button>
+                    <button type="reset">Очистить</button>
+                </div>
+            </form>
+        </div>
+        <div class="exercise-2">
+            <form name="formSearchStr" class="form-search-str">
+                <input type="text" name="str" placeholder="Строка для поиска подстроки">
+                <button type="submit">Найти подстроки</button>
+            </form>
+            <p class="result-search-str">Найденные подстроки: <span></span></p>
+        </div>
+    </div>
+</div>
+<div class="links-block">
+    <div class="links-block-title">
+        <p>Ссылки на программные коды работы</p>
+    </div>
+    <div class="links-block-content">
+        <span>GitHub репозиторий - </span>
+        <iframe src="https://ghbtns.com/github-btn.html?user=kel1w0egh&repo=stip/tree/master/pages/3&type=star&count=true"
+                frameborder="0" scrolling="0" height="20px" title="GitHub">
+        </iframe>
+    </div>
+</div>
 
+<!-- JavaScript файлы -->
+<script src="script.js"></script>
 </body>
 </html>
