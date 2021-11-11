@@ -1,0 +1,74 @@
+.condition-block-title p,
+.results-block-title p,
+.links-block-title p {
+    text-align: center;
+    color: antiquewhite;
+}
+
+.condition-block-title,
+.results-block-title ,
+.links-block-title {
+    cursor: pointer;
+    padding: 15px 0;
+    background-color: dodgerblue;
+    transition: .4s all;
+}
+
+.condition-block-title:hover,
+.results-block-title:hover,
+.links-block-title:hover {
+    background-color: #016ae3;
+}
+
+.results-block-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.condition-block-content,
+.results-block-content,
+.links-block-content {
+    height: fit-content;
+    padding: 25px 50px;
+}
+
+.links-block-content {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.results-block-content div:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+/* Задание №2 */
+
+.test-block-blue {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    right: 0;
+    text-align: center;
+}
+
+.exercise-2-container {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border: 1px solid gray;
+}
+
+/* Задание №3 */
+.hidden {
+    display: none;
+}
+
+.exercise-3 form {
+    display: flex;
+    flex-direction: column;
+    width: 371px;
+}
