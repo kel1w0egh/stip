@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<COMPANY>
+    <EMPLOYEE number="1">
+        <SURNAME>Василенко</SURNAME>
+        <NAME>Василий</NAME>
+        <MIDDLENAME>Васильевич</MIDDLENAME>
+        <ADDRESS>
+            <INDEX>50054</INDEX>
+            <TYPE>Город</TYPE>
+            <AREA>Киевская</AREA>
+            <LOCALITY>Соломенский</LOCALITY>
+            <STREET>Амосова</STREET>
+            <HOUSE_NUMBER>22</HOUSE_NUMBER>
+            <HOUSING minOccurs="0"></HOUSING>
+            <APARTMENT>55</APARTMENT>
+        </ADDRESS>
+        <NUMBER>
+            <HOME_PHNUMBER>555666</HOME_PHNUMBER>
+            <PHONE_PHNUMBER maxOccurs="2">+380680000000</PHONE_PHNUMBER>
+        </NUMBER>
+        <POSITION>Программист</POSITION>
+        <SUBDIVISION>Game Development</SUBDIVISION>
+    </EMPLOYEE>
+</COMPANY>
