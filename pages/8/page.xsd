@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="COMPANY">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="EMPLOYEE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SURNAME"
+                          type="xs:string">Василенко</xs:element>
+              <xs:element name="NAME"
+                          type="xs:string">Василий</xs:element>
+              <xs:element name="MIDDLENAME"
+                          type="xs:string">Васильевич</xs:element>
+              <xs:element name="ADDRESS">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="INDEX"
+                                type="xs:integer">50054</xs:element>
+                    <xs:element name="TYPE"
+                                type="xs:string">Город</xs:element>
+                    <xs:element name="AREA"
+                                type="xs:string">Киевская</xs:element>
+                    <xs:element name="LOCALITY"
+                                type="xs:string">Соломенский</xs:element>
+                    <xs:element name="STREET"
+                                type="xs:string">Амосова</xs:element>
+                    <xs:element name="HOUSE_NUMBER"
+                                type="xs:integer">22</xs:element>
+                    <xs:element name="HOUSING">
+                      <xs:complexType>
+                        <xs:attribute name="minOccurs"
+                                      type="xs:integer"
+                                      use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="APARTMENT"
+                                type="xs:integer">55</xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="NUMBER">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="HOME_PHNUMBER"
+                                type="xs:integer">555666</xs:element>
+                    <xs:element name="PHONE_PHNUMBER">+380680000000
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:long">
+                            <xs:attribute name="maxOccurs"
+                                          type="xs:integer"
+                                          use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="POSITION"
+                          type="xs:string">Программист</xs:element>
+              <xs:element name="SUBDIVISION"
+                          type="xs:string">Game Development</xs:element>
+            </xs:sequence>
+            <xs:attribute name="number"
+                          type="xs:string"
+                          use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
